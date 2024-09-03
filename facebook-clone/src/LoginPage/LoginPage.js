@@ -51,7 +51,7 @@ function LoginPage() {
                 <div className="LoginContainer">
                     <div className="logindetails">
                         <input
-                            type="email"
+                            type="text"
                             value={userNameTrying}
                             onChange={(e) => setUserNameTrying(e.target.value)}
                             placeholder="Email address or phone number"

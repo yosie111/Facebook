@@ -1,0 +1,30 @@
+.btn {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #1877F2;
+    border: none;
+    box-sizing: border-box;
+    padding: 15px 32px;
+    justify-content: center;
+    margin: 4px 2px;
+    color: white;
+    border-radius: .5rem;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type="password"]{
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input ::placeholder{
+    font-size: 1.3rem;
+}

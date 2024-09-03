@@ -37,7 +37,7 @@ body{
     border-radius: .7rem;
 }
 
-input[type="email"]{
+input[type="text"]{
     width: 100%;
     padding: 20px 20px;
     margin: 8px 0;
