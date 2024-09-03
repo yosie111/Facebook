@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"; // החלף Switch ו-Redirect
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // החלף Switch ו-Redirect
 import './App.css';
 import LoginPage from "./LoginPage/LoginPage";
 import HeaderArea from "./HeaderArea/HeaderArea";
