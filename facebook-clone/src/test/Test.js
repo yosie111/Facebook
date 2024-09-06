@@ -1,8 +1,14 @@
-import React from "react";
+import React from 'react';
+import AuthProvider from '../Login/AuthProvider';  // עוטף את כל הקומפוננטות
+import OkNavigation from './OkNavigation';
 
 function Test() {
-    return (<div>
-        <h1>test</h1>
-    </div>)
+    return (
+        <AuthProvider>
+            <OkNavigation/>
+        </AuthProvider>
+
+    );
 }
+
 export default Test;

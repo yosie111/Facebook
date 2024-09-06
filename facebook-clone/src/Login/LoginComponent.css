@@ -28,3 +28,10 @@ input[type="password"]{
 input ::placeholder{
     font-size: 1.3rem;
 }
+
+#error{
+    color: red;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+}

@@ -1,35 +1,26 @@
-import React, { useState, useContext } from 'react';
-import { AuthContext } from './AuthContext';
-import  './LoginComponent.css'
+import React, { useContext } from 'react';
+import UserContext from './UserContext';
 
 function LoginComponent() {
-    const {error, isLoading, login } = useContext(AuthContext);
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const { verificUser } = useContext(UserContext);
+    const { data, setIsItTrueCheck } = verificUser;
 
-    const handleLogin = () => {
-        login(username, password);
+    const userPassCorrect = {
+        userNameCorrect: 'a',
+        passwordCorrect: 'b',
     };
+
+    function clickHandler() {
+        const correct = data.userNameTrying === userPassCorrect.userNameCorrect &&
+            data.passwordTrying === userPassCorrect.passwordCorrect;
+
+        setIsItTrueCheck({ isTrueUser: correct });
+        console.log('LoginComponent isTrueUser: ' + correct);
+    }
 
     return (
         <div>
-            <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Email address or phone number"
-            />
-            <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
-            />
-            <button  className="btn" onClick={handleLogin} disabled={isLoading}>
-                {isLoading ? 'Log in...' : 'Log in'}
-            </button>
-
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+            <button className="btn" onClick={clickHandler}>Login</button>
         </div>
     );
 }

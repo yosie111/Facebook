@@ -5,7 +5,8 @@ import LoginPage from "./LoginPage/LoginPage";
 import HeaderArea from "./HeaderArea/HeaderArea";
 import HomePage from "./HomePage/HomePage";
 import Test from "./test/Test";
-import AppT from "./Login/AppT";
+import AuthProvider from "./Login/AuthProvider";
+//import AppT from "./Login/AppT";
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
         <div className="App">
             <Router>
                 <Routes>
-                    <Route path="/AppT" element={<AppT />} />
+                    <Route path="/AuthProvider" element={<AuthProvider />} />
                     <Route path="/LoginPage" element={<LoginPage />} />
                     <Route path="/Test" element={<Test />} />
                     <Route path="/HeaderArea" element={<HeaderArea />} />
