@@ -1,3 +1,12 @@
+" ApiPrac simulates a memory call to the server [as if the server sends the correct username and password]
+It remains to integrate it within the LoginComponent component
+
+Test simulates the verification.
+And the response of the compinante to verification is correct [which transfers to HomePage] and incorrect [which gives an error message.
+
+It is still a draft and further actions are required
+I hope to complete them soon. "
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

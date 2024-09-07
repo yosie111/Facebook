@@ -3,7 +3,12 @@ import UserContext from './UserContext';
 
 function LoginComponent() {
     const { verificUser } = useContext(UserContext);
+
+
+
     const { data, setIsItTrueCheck } = verificUser;
+
+
 
     const userPassCorrect = {
         userNameCorrect: 'a',

@@ -6,14 +6,13 @@ import HeaderArea from "./HeaderArea/HeaderArea";
 import HomePage from "./HomePage/HomePage";
 import Test from "./test/Test";
 import AuthProvider from "./Login/AuthProvider";
-//import AppT from "./Login/AppT";
-
+import ApiPrac from "./Login/ApiPrac"
 function App() {
-
     return (
         <div className="App">
             <Router>
                 <Routes>
+                    <Route path="/ApiPrac" element={<ApiPrac />} />
                     <Route path="/AuthProvider" element={<AuthProvider />} />
                     <Route path="/LoginPage" element={<LoginPage />} />
                     <Route path="/Test" element={<Test />} />

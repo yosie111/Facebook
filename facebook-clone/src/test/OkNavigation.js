@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 function OkNavigation() {
-    const context = useContext(UserContext);  // גישה לקונטקסט
-    const { userAuthenticated } = context || {};  // בדיקה אם יש ערך לקונטקסט
+    const context = useContext(UserContext);
+    const { userAuthenticated } = context || {};
     const navigate = useNavigate();
 
 
