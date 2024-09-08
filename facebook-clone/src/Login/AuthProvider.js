@@ -52,6 +52,7 @@ function AuthProvider({ children }) {  // Receiving children as a parameter
                 userNameTrying: '', // Clear username after login attempt
                 passwordTrying: '', // Clear password after login attempt
             }));
+            console.log('value.isTrueUser  :  '+value.isTrueUser);
             setUserAuthenticated(value.isTrueUser);
         },
     };
@@ -81,12 +82,10 @@ function AuthProvider({ children }) {  // Receiving children as a parameter
                     onChange={(e) => setPasswordTrying(e.target.value)}
                     placeholder="Password"
                 />
-                <br />
+                <br/>
             </div>
             <LoginComponent />
             {attemptedLogin && <p id="error">{error}</p>}
-
-            {/* Displaying the children here */}
             {children}
         </UserContext.Provider>
     );

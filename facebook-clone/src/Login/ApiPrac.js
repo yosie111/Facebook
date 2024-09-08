@@ -5,16 +5,16 @@
 import React, { useState , useEffect} from "react";
 
 function ApiPrac() {
-    const [data, setUserDataCorrectAPI] = useState({
+    const [dataCorrect, setUserDataCorrectAPI] = useState({
         userNameCorrect: '',   // Default value for username
         passwordCorrect: '',
         loginAttempt: false,
     });
     useEffect(() => {
-        if (data.loginAttempt ===true) {
+        if (dataCorrect.loginAttempt ===true) {
             console.log('the data state is updated');  // Logs data only after fetching is done
         }
-    }, [data.loginAttempt]);
+    }, [dataCorrect.loginAttempt]);
 
 
     // Fetch data only once when the component mounts
@@ -47,13 +47,13 @@ function ApiPrac() {
     // Handle button click
     const updateUserData = () => {
         fetchData();
-            console.log('the data state is updated');  // Logs data only after fetching is done
+        console.log('the data state is updated');  // Logs data only after fetching is done
     };
 
     return (
         <div>
-            <p>Username: {data.userNameCorrect}</p>
-            <p>Password: {data.passwordCorrect}</p>
+            <p>Username: {dataCorrect.userNameCorrect}</p>
+            <p>Password: {dataCorrect.passwordCorrect}</p>
             <button onClick={updateUserData}>Update User Data</button>
         </div>
     );
