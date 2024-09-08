@@ -1,18 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 import Test from "../test/Test";
 
 function LoginPage() {
-    const [userNameTrying, setUserNameTrying] = useState('');
-    const [passwordTrying, setpasswordTrying] = useState('');
-    const [error, setError] = useState('');
-    const [isItTrue, setIsItTrue] = useState(false);
-    const userName = "abc@gmail.com";
-    const password = "123";
-    const navigate = useNavigate();
-
-
 
 
     return (
