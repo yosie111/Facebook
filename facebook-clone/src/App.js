@@ -4,8 +4,6 @@ import './App.css';
 import LoginPage from "./LoginPage/LoginPage";
 import HeaderArea from "./HeaderArea/HeaderArea";
 import HomePage from "./HomePage/HomePage";
-import Test from "./test/Test";
-import AuthProvider from "./Login/AuthProvider";
 import ApiPrac from "./Login/ApiPrac"
 function App() {
     return (
@@ -13,9 +11,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/ApiPrac" element={<ApiPrac />} />
-                    <Route path="/AuthProvider" element={<AuthProvider />} />
                     <Route path="/LoginPage" element={<LoginPage />} />
-                    <Route path="/Test" element={<Test />} />
                     <Route path="/HeaderArea" element={<HeaderArea />} />
                     <Route path="/HomePage" element={ <HomePage /> } />
                     <Route path="/" element={<LoginPage />} />

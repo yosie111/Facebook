@@ -28,8 +28,8 @@ function LoginComponent() {
         return new Promise((resolve) => {
             setTimeout(() => {
                 setUserDataCorrectAPI({
-                    userNameCorrect: 'd',   // Default value for username
-                    passwordCorrect: 'd',
+                    userNameCorrect: 'abc',   // Default value for username
+                    passwordCorrect: '123',
                     loginAttempt: true,
                 });
                 resolve('Data fetched');
